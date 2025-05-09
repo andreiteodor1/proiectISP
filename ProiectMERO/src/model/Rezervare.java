@@ -2,9 +2,6 @@ package model;
 
 import java.time.LocalDateTime;
 
-/**
- * Leagă un client, un angajat și ora rezervării.
- */
 public class Rezervare {
     public enum Status { PENDING, CONFIRMED, CANCELLED }
 
@@ -25,23 +22,9 @@ public class Rezervare {
     public Angajat getAngajat() { return angajat; }
     public Status getStatus() { return status; }
 
-    /**
-     * Confirmă rezervarea.
-     */
-    public void confirmare() {
-        this.status = Status.CONFIRMED;
-    }
+    public void confirmare() { this.status = Status.CONFIRMED; }
+    public void cancelare() { this.status = Status.CANCELLED; }
 
-    /**
-     * Anulează rezervarea.
-     */
-    public void cancelare() {
-        this.status = Status.CANCELLED;
-    }
-
-    /**
-     * Generează un text de confirmare.
-     */
     public String genereazaConfirmare() {
         return String.format("Confirmare: %s cu %s la %s",
                 client.getNume(), angajat.getNume(), dataOra);

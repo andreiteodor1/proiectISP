@@ -1,8 +1,5 @@
 package model;
 
-/**
- * Reprezintă un serviciu oferit de salon.
- */
 public class Serviciu {
     private String nume;
     private int durataMinute;
@@ -18,9 +15,6 @@ public class Serviciu {
     public int getDurataMinute() { return durataMinute; }
     public double getPret() { return pret; }
 
-    /**
-     * Afișează detaliile serviciului.
-     */
     public void afisare() {
         System.out.println(toString());
     }

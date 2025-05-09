@@ -2,9 +2,6 @@ package manager;
 
 import model.*;
 
-/**
- * Permite consultarea și generarea abonamentelor.
- */
 public class SubscriptionService {
     public void consultareAbonamente() {
         for (Abonament a : Abonament.values()) {

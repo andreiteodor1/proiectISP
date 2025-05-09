@@ -3,9 +3,6 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Reprezintă un angajat al salonului.
- */
 public class Angajat extends Persoana {
     private Serviciu specialitate;
     private List<String> recenzii = new ArrayList<>();
@@ -22,9 +19,6 @@ public class Angajat extends Persoana {
     public Serviciu getSpecialitate() { return specialitate; }
     public List<String> getRecenzii() { return recenzii; }
 
-    /**
-     * Adaugă o recenzie.
-     */
     public void adaugaRecenzie(String text) {
         recenzii.add(text);
     }

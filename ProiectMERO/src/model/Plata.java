@@ -2,9 +2,6 @@ package model;
 
 import java.time.LocalDateTime;
 
-/**
- * Reprezintă o plată pentru o rezervare.
- */
 public class Plata {
     private double suma;
     private String metoda;
@@ -22,12 +19,7 @@ public class Plata {
     public LocalDateTime getDataOra() { return dataOra; }
     public boolean isPrimita() { return primita; }
 
-    /**
-     * Confirmă primirea plății.
-     */
-    public void confirmarePrimire() {
-        this.primita = true;
-    }
+    public void confirmarePrimire() { this.primita = true; }
 
     public void afisare() {
         System.out.printf("Plata: %.2f lei via %s la %s [%s]%n",

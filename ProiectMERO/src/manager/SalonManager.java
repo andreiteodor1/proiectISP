@@ -1,12 +1,9 @@
 package manager;
 
-import model.*;
+import model.Salon;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Gestionează mai multe saloane și fluxul de utilizare.
- */
 public class SalonManager {
     private List<Salon> saloane = new ArrayList<>();
 

@@ -1,8 +1,5 @@
 package model;
 
-/**
- * Superclasă pentru toate persoanele din sistem (client sau angajat).
- */
 public abstract class Persoana {
 	private String nume;
 	private String prenume;
@@ -26,9 +23,6 @@ public abstract class Persoana {
 	public void setNrTel(String nrTel) { this.nrTel = nrTel; }
 	public void setMail(String mail) { this.mail = mail; }
 
-	/**
-	 * Afișează datele comune unei persoane: nume, prenume, telefon, email.
-	 */
 	public void afisare() {
 		System.out.println("Nume: " + nume);
 		System.out.println("Prenume: " + prenume);

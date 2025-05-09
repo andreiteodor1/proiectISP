@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.time.LocalDateTime;
 
-/**
- * Conține servicii, angajați și rezervări pentru un salon.
- */
 public class Salon {
     private String denumire;
     private List<Serviciu> listaServicii = new ArrayList<>();
@@ -18,6 +15,14 @@ public class Salon {
     }
 
     public String getDenumire() { return denumire; }
+
+    // Getter necesare pentru Main
+    public List<Serviciu> getListaServicii() {
+        return listaServicii;
+    }
+    public List<Angajat> getListaAngajati() {
+        return listaAngajati;
+    }
 
     public void adaugaServiciu(Serviciu s) {
         listaServicii.add(s);
